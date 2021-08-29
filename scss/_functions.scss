@@ -1,0 +1,11 @@
+@function gridRepeat($n, $unit) {
+    
+    $value: "";
+
+    @for $i from 0 to $n {
+        $value: $value + " " + $unit;
+    }
+
+    @return unquote($value);
+
+}
